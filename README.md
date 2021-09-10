@@ -24,6 +24,12 @@ npm run dev
 
 This will start the front-end on port 3000 and the json-server on port 5000.
 
+The movies collection has the following fields:
+
+1. id - autoincremented
+2. title - title of the movie
+3. year - year the movie was released
+
 ## To do
 
 1. Implement search feature.
