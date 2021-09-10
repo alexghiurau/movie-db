@@ -27,9 +27,10 @@ This will start the front-end on port 3000 and the json-server on port 5000.
 ## To do
 
 1. Implement search feature.
-2. Improve layout and use of space
-3. Improve Movie component to display more info (e.g. directors, actors, genre)
-4. A lot more!
+2. Improve layout and use of space.
+3. Improve Movie component to display more info (e.g. directors, actors, genre).
+4. Add proper JSDoc documentation.
+5. Fix the errors state, currently only logs to console.
 
 ## History
 
