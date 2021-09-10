@@ -45,6 +45,8 @@ I used JSON-server because for such a simple application with a single entity, I
 
 I used materialize css because it was quick to deploy, CSS can be time consuming during such challenges.
 
+There is no security (authentication, encryption) here but for such a project I did not think it was necessary at this time.
+
 ## License
 
 To do...
