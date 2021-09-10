@@ -31,6 +31,7 @@ This will start the front-end on port 3000 and the json-server on port 5000.
 3. Improve Movie component to display more info (e.g. directors, actors, genre).
 4. Add proper JSDoc documentation.
 5. Fix the errors state, currently only logs to console.
+6. Add proper startup script (needs dedicated backend).
 
 ## History
 
