@@ -1,10 +1,10 @@
 # Movie DB
 
-A simple database of movies.
+A simple database of movies. Uses json-server as a database. You can add, edit, delete and see movies.
 
 ## Prerequisites
 
-node.js/npm
+node.js/npm, JavaScript enabled web browser
 
 ## Installation
 
@@ -19,16 +19,17 @@ npm install
 To start the app, type into the terminal:
 
 ```
-...
+npm run dev
 ```
 
-## Contributing
+This will start the front-end on port 3000 and the json-server on port 5000.
 
-1. Fork this repository.
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request.
+## To do
+
+1. Implement search feature.
+2. Improve layout and use of space
+3. Improve Movie component to display more info (e.g. directors, actors, genre)
+4. A lot more!
 
 ## History
 
@@ -36,6 +37,10 @@ See commits.
 
 ## Reflection
 
+Just a short paragraph here, I decided to use React as time was restricted for this challenge. I went with using Redux rather than React's built in hooks / context API because I wanted to practice using Redux.
+
+I used JSON-server because for such a simple application with a single entity, I decided it was not worth building and connecting to a SQL database or a noSQL one such as MongoDB.
+
 ## License
 
-MIT
+To do...
