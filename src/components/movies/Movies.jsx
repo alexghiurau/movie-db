@@ -21,7 +21,9 @@ const Movies = ({ movie: { movies, loading }, getMovies }) => {
         <h4 className='center'>Movie Database</h4>
       </li>
       {!loading && movies.length === 0 ? (
-        <p className='center'>No logs to show. Try adding one!</p>
+        <p className='center'>
+          No movies to show. Try adding one by clicking the + button!
+        </p>
       ) : (
         movies.map((movie) => <MovieItem movie={movie} key={movie.id} />)
       )}

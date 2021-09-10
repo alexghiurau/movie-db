@@ -18,7 +18,7 @@ const MovieItem = ({ movie, deleteMovie, setCurrent }) => {
           href='#edit-movie-modal'
           className={'modal-trigger blue-text'}
           onClick={() => setCurrent(movie)}>
-          {movie.title}
+          {movie.title} - {movie.year}
         </a>
         <br />
         <span className='grey-text'>

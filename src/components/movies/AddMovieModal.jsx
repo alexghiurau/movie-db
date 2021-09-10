@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addMovie } from '../../actions/movieActions';
 
-const AddMovieModal = ({ addLog }) => {
+const AddMovieModal = ({ addMovie }) => {
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
 
@@ -27,7 +27,7 @@ const AddMovieModal = ({ addLog }) => {
   };
 
   return (
-    <div id='add-log-modal' className='modal' style={modalStyle}>
+    <div id='add-movie-modal' className='modal' style={modalStyle}>
       <div className='modal-content'>
         <h4>Enter Movie</h4>
         <div className='row'>

@@ -14,7 +14,23 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 import './App.css';
 
 const App = () => {
-  return <div>placeholder</div>;
+  useEffect(() => {
+    // initialise materialize JS
+    M.AutoInit();
+  });
+  return (
+    <Provider store={store}>
+      <Fragment>
+        <Searchbar />
+        <div className='container'>
+          <AddBtn />
+          <AddMovieModal />
+          <EditMovieModal />
+          <Movies />
+        </div>
+      </Fragment>
+    </Provider>
+  );
 };
 
 export default App;

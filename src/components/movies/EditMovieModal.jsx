@@ -54,7 +54,7 @@ const EditMovieModal = ({ updateMovie, current }) => {
               type='text'
               name='year'
               value={year}
-              onChange={(e) => setTitle(e.target.value)}
+              onChange={(e) => setYear(e.target.value)}
             />
           </div>
         </div>
@@ -82,7 +82,7 @@ EditMovieModal.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  current: state.log.current,
+  current: state.movie.current,
 });
 
 export default connect(mapStateToProps, { updateMovie })(EditMovieModal);

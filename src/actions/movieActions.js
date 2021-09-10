@@ -17,15 +17,18 @@ export const getMovies = () => async (dispatch) => {
     const res = await fetch('/movies');
     const data = await res.json();
 
+    console.log(data);
+
     dispatch({
       type: GET_MOVIES,
       payload: data,
     });
   } catch (err) {
-    dispatch({
-      MOVIES_ERROR,
-      payload: err.response.statusText,
-    });
+    // dispatch({
+    //   MOVIES_ERROR,
+    //   payload: err,
+    // });
+    console.error(err);
   }
 };
 
@@ -48,10 +51,11 @@ export const addMovie = (movie) => async (dispatch) => {
       payload: data,
     });
   } catch (err) {
-    dispatch({
-      MOVIES_ERROR,
-      payload: err.response.statusText,
-    });
+    // dispatch({
+    //   MOVIES_ERROR,
+    //   payload: err,
+    // });
+    console.error(err);
   }
 };
 
@@ -69,10 +73,11 @@ export const deleteMovie = (id) => async (dispatch) => {
       payload: id,
     });
   } catch (err) {
-    dispatch({
-      MOVIES_ERROR,
-      payload: err.response.statusText,
-    });
+    // dispatch({
+    //   MOVIES_ERROR,
+    //   payload: err,
+    // });
+    console.error(err);
   }
 };
 
@@ -95,10 +100,11 @@ export const updateMovie = (movie) => async (dispatch) => {
       payload: data,
     });
   } catch (err) {
-    dispatch({
-      MOVIES_ERROR,
-      payload: err.response.statusText,
-    });
+    // dispatch({
+    //   MOVIES_ERROR,
+    //   payload: err,
+    // });
+    console.error(err);
   }
 };
 
