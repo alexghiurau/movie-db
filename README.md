@@ -43,6 +43,8 @@ Just a short paragraph here, I decided to use React as time was restricted for t
 
 I used JSON-server because for such a simple application with a single entity, I decided it was not worth building and connecting to a SQL database or a noSQL one such as MongoDB.
 
+I used materialize css because it was quick to deploy, CSS can be time consuming during such challenges.
+
 ## License
 
 To do...
