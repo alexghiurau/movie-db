@@ -10,6 +10,7 @@ import {
   UPDATE_MOVIE,
 } from '../actions/types';
 
+// sets initial state to empty
 const initialState = {
   movies: null,
   current: null,
@@ -17,6 +18,7 @@ const initialState = {
   error: null,
 };
 
+// after dispatching to reducer, data is manipulated using the below switch statement
 export default (state = initialState, action) => {
   switch (action.type) {
     case GET_MOVIES:

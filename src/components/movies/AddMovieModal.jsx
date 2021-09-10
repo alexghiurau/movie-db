@@ -4,10 +4,12 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addMovie } from '../../actions/movieActions';
 
+// creates and launches the Add Movie modal used for adding movies
 const AddMovieModal = ({ addMovie }) => {
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
 
+  // push movie to the db if checks as passed
   const onSubmit = () => {
     if (title === '' || year === '') {
       M.toast({ html: 'Please enter a title and year.' });

@@ -4,10 +4,12 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { updateMovie } from '../../actions/movieActions';
 
+// creates and launches the Add Movie modal used for adding movies
 const EditMovieModal = ({ updateMovie, current }) => {
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
 
+  // sets fields to current movie values
   useEffect(() => {
     if (current) {
       setTitle(current.title);
@@ -15,6 +17,7 @@ const EditMovieModal = ({ updateMovie, current }) => {
     }
   }, [current]);
 
+  // if fields are filled in it will create a local copy of the movie data and update it then clear fields
   const onSubmit = () => {
     if (title === '' || year === '') {
       M.toast({ html: 'Please enter a title and year.' });

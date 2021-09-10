@@ -1,5 +1,7 @@
 import React from 'react';
 
+// The Add button, used for adding movies
+// Toggles a modal
 const AddBtn = () => {
   return (
     <div className='fixed-action-btn'>

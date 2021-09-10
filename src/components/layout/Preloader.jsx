@@ -1,3 +1,5 @@
+// A simple loading bar
+
 const Preloader = () => {
   return (
     <div className='progress blue lighten-4'>

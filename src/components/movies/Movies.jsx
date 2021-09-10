@@ -5,6 +5,8 @@ import MovieItem from './MovieItem';
 import Preloader from '../layout/Preloader';
 import { getMovies } from '../../actions/movieActions';
 
+// Movies is the main component mapping through each movie as an MovieItem component
+// uses the movie id field as the key for each MovieItem
 const Movies = ({ movie: { movies, loading }, getMovies }) => {
   useEffect(() => {
     getMovies();

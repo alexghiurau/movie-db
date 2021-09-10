@@ -5,7 +5,9 @@ import { deleteMovie, setCurrent } from '../../actions/movieActions';
 
 import M from 'materialize-css/dist/js/materialize.min.js';
 
+// Movie Items are part of the Movie component, each representing an individual movie
 const MovieItem = ({ movie, deleteMovie, setCurrent }) => {
+  // clicking trash icon will delete selected movie from db
   const onDelete = () => {
     deleteMovie(movie.id);
     M.toast({ html: 'Movie deleted.' });

@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 import { connect } from 'react-redux';
 
+// A navbar/searchbar combo, in future can be used to search/filter through movies
+// based on set criteria such as title
+
 const Searchbar = ({}) => {
   const text = useRef('');
 
